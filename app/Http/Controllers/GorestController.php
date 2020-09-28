@@ -86,7 +86,7 @@ class GorestController extends Controller
         $data = json_decode($body, true);
         $finaldata = $data['data'];
         //var_dump($finaldata);die;
-
+ 
         return view('gorest.show',compact('finaldata'));
     }
 
