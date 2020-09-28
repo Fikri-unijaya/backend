@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>Club Management System</title>
+  <title>Fikri punya</title>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
@@ -93,7 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <a href="index3.html" class="brand-link">
       <img src="{{ asset('dist/img/logo.png') }}" alt="Unikl Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Club Management</span>
+      <span class="brand-text font-weight-light">Fikri punya</span>
     </a>
 
     <!-- Sidebar -->
@@ -117,6 +117,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="{{ url('/user') }}" class="nav-link {{ Request::is('user') ? 'active' : '' }}">
                   <i class="fa fa-users nav-icon text-info"></i>
                   <p>User Management</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/gorest') }}" class="nav-link {{ Request::is('gorest') ? 'active' : '' }}">
+                  <i class="fas fa-home nav-icon text-info" aria-hidden="true"></i>
+                  <p>Go rest</p>
                 </a>
               </li>
                <li class="nav-item">
