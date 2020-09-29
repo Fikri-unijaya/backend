@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>Fikri punya</title>
+  <title>Unijaya</title>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
@@ -41,7 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
+    <!-- <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
         <div class="input-group-append">
@@ -50,13 +50,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </button>
         </div>
       </div>
-    </form>
+    </form> -->
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
           <span class="badge badge-warning navbar-badge">15</span>
@@ -81,7 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
-      </li>
+      </li> -->
     
     </ul>
   </nav>
@@ -90,10 +90,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="{{ asset('dist/img/logo.png') }}" alt="Unikl Logo" class="brand-image img-circle elevation-3"
+    <a href="#" class="brand-link">
+      <img src="{{ asset('dist/img/logo.jpg') }}" alt="Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Fikri punya</span>
+      <span class="brand-text font-weight-light">Unijaya</span>
     </a>
 
     <!-- Sidebar -->
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset('dist/img/user3-128x128.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{ asset('dist/img/user8-128x128.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->name }}</a>
@@ -121,7 +121,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
               <li class="nav-item">
                 <a href="{{ url('/gorest') }}" class="nav-link {{ Request::is('gorest') ? 'active' : '' }}">
-                  <i class="fas fa-home nav-icon text-info" aria-hidden="true"></i>
+                  <i class="fas fa-server nav-icon text-info" aria-hidden="true"></i>
                   <p>Go rest</p>
                 </a>
               </li>

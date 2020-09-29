@@ -40,7 +40,7 @@ class GorestController extends Controller
      */
     public function create()
     {
-        return view('user.create');
+        return view('gorest.create');
     }
 
     /**
@@ -55,21 +55,23 @@ class GorestController extends Controller
         $request->validate([
         'name'=>'required',
         'email'=> 'required',
-        'password' => 'required',
+        'gender' => 'required',
+        'status' => 'required',
         // 'role' => 'required'
         ]);
     
          $User = new User([
         'name' => $request->get('name'),
         'email'=> $request->get('email'),
-        'password'=>  Hash::make($request->get('password')),
+        'gender'=> $request->get('gender'),
+        'status'=> $request->get('status'),
         // 'user_type'=> $request->get('role'),
         ]);
 
        $User->save();
        // toastr()->success('User has been added successfully!');
        
-       return redirect('/user');
+       return redirect('/gorest');
     }
 
     /**

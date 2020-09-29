@@ -58,7 +58,7 @@ class UserController extends Controller
         ]);
 
        $User->save();
-       // toastr()->success('User has been added successfully!');
+       //toastr()->success('User has been added successfully!');
        
        return redirect('/user');
     }

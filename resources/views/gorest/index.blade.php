@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">GoRest User</h1>
+            <h1 class="m-0 text-dark">GoRest Data</h1>
           </div><!-- /.col -->
           
         </div><!-- /.row -->
@@ -18,6 +18,13 @@
        <div class="container-fluid">
       <div class="card ">
   <div class="card-body">
+  	<div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-right">
+                <a class="btn btn-dark" href="{{ url('gorest/create') }}"> Create New User</a>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-right">
@@ -51,7 +58,7 @@
             <td>{{ $value['email'] }}</td>
             <td>{{ $value['gender'] }}</td>
             <td>{{ $value['status'] }}</td>
-            <td>
+            <td style="width:200px">
                 <form action="{{ url('gorest/destroy',$value['id']) }}" method="POST">
    
             

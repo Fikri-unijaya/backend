@@ -54,7 +54,7 @@
             <td>Member</td>
             <?php endif;?> -->
 
-            <td>
+            <td style="text-align:center;">
                 <form action="{{ url('user/destroy',$Users->id) }}" method="POST">
    
             
